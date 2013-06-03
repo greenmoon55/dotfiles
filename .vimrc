@@ -27,6 +27,7 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 set cindent
+set mouse=a
 
 map <C-n> :NERDTreeToggle<CR>
 let g:syntastic_check_on_open=1
