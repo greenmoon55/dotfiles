@@ -14,6 +14,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet.vim'
+Bundle 'suan/vim-instant-markdown'
 
 filetype plugin indent on     " required!
 
