@@ -9,12 +9,15 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-Bundle 'ZenCoding.vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet.vim'
-Bundle 'suan/vim-instant-markdown'
+" Bundle 'suan/vim-instant-markdown'
+Bundle 'kien/ctrlp.vim'
+Bundle 'klen/python-mode'
+
 
 filetype plugin indent on     " required!
 
@@ -29,6 +32,7 @@ set shiftwidth=2
 set tabstop=2
 set cindent
 set mouse=a
+set nonumber
 
 map <C-n> :NERDTreeToggle<CR>
 let g:syntastic_check_on_open=1
