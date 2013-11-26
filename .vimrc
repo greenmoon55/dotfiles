@@ -10,7 +10,7 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 Bundle 'mattn/emmet-vim'
-Bundle 'scrooloose/syntastic' " Syntax Checking
+Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet.vim'
