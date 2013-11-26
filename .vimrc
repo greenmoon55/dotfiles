@@ -10,11 +10,11 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 Bundle 'mattn/emmet-vim'
-Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/syntastic' " Syntax Checking
 Bundle 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet.vim'
-" Bundle 'suan/vim-instant-markdown'
+Bundle 'suan/vim-instant-markdown'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 
@@ -151,3 +151,9 @@ inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
 inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
 inoremap <expr><Up>    neocomplcache#close_popup() . "\<Up>"
 inoremap <expr><Down>  neocomplcache#close_popup() . "\<Down>"
+
+" Disable syntax checking for python, too many errors now!
+let g:syntastic_python_checkers = []
+let g:pymode_lint = 0
+"let g:pymode_lint_checker = "pyflakes,pep8,mccabe"
+"let g:pymode_lint_ignore = "C0110"
