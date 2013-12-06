@@ -17,7 +17,7 @@ Bundle 'Shougo/neosnippet.vim'
 Bundle 'suan/vim-instant-markdown'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
-
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on     " required!
 
@@ -25,9 +25,8 @@ filetype plugin indent on     " required!
 set expandtab
 
 " Be smart when using tabs ;)
-set smarttab
+" set smarttab
 
-" 1 tab == 4 spaces
 set shiftwidth=2
 set tabstop=2
 set cindent
@@ -39,7 +38,7 @@ let g:syntastic_check_on_open=1
 
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
-" Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+" neo-completion with cache
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
@@ -99,7 +98,7 @@ inoremap <expr><C-e>  neocomplcache#cancel_popup()
 " Or set this.
 "let g:neocomplcache_enable_cursor_hold_i = 1
 " Or set this.
-"let g:neocomplcache_enable_insert_char_pre = 1
+let g:neocomplcache_enable_insert_char_pre = 1
 
 " AutoComplPop like behavior.
 "let g:neocomplcache_enable_auto_select = 1
@@ -125,10 +124,6 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
-" For perlomni.vim setting.
-" https://github.com/c9s/perlomni.vim
-let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-
 " Plugin key-mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -146,11 +141,6 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
-
-inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
-inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
-inoremap <expr><Up>    neocomplcache#close_popup() . "\<Up>"
-inoremap <expr><Down>  neocomplcache#close_popup() . "\<Down>"
 
 " Disable syntax checking for python, too many errors now!
 let g:syntastic_python_checkers = []
