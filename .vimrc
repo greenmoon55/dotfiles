@@ -34,6 +34,8 @@ set cindent
 set mouse=a
 set nonumber
 set t_Co=256
+set ignorecase
+set smartcase
 
 set background=dark
 colorscheme solarized
