@@ -18,6 +18,7 @@ Bundle 'suan/vim-instant-markdown'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on     " required!
 
@@ -32,6 +33,7 @@ set tabstop=2
 set cindent
 set mouse=a
 set nonumber
+set t_Co=256  
 
 map <C-n> :NERDTreeToggle<CR>
 let g:syntastic_check_on_open=1
@@ -142,8 +144,12 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
-" Disable syntax checking for python, too many errors now!
 let g:syntastic_python_checkers = []
-let g:pymode_lint = 0
-"let g:pymode_lint_checker = "pyflakes,pep8,mccabe"
-"let g:pymode_lint_ignore = "C0110"
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes"
+let g:pymode_lint_ignore = "C0110,F0401"
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_onfly = 1
+
+" Enable airline
+set laststatus=2
