@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -33,7 +33,10 @@ set tabstop=2
 set cindent
 set mouse=a
 set nonumber
-set t_Co=256  
+set t_Co=256
+
+set background=dark
+colorscheme solarized
 
 map <C-n> :NERDTreeToggle<CR>
 let g:syntastic_check_on_open=1
@@ -153,3 +156,4 @@ let g:pymode_lint_onfly = 1
 
 " Enable airline
 set laststatus=2
+
