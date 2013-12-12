@@ -147,12 +147,12 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
-let g:syntastic_python_checkers = []
-let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes"
-let g:pymode_lint_ignore = "C0110,F0401"
+" Use syntastic for python syntax checking
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+let g:pymode_lint = 0
+let g:pymode_lint_write = 1
 let g:pymode_lint_cwindow = 0
-let g:pymode_lint_onfly = 1
+let g:pymode_lint_ignore = "C0110,F0401"
 
 " Enable airline
 set laststatus=2
