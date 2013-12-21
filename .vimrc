@@ -33,9 +33,10 @@ set tabstop=2
 set cindent
 set mouse=a
 set nonumber
-set t_Co=256
+set t_Co=256 " for vim-airline
 set ignorecase
 set smartcase
+syntax on
 
 set background=dark
 colorscheme solarized
