@@ -19,6 +19,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
+Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on     " required!
 
@@ -30,6 +31,7 @@ set expandtab
 
 set shiftwidth=2
 set tabstop=2
+set softtabstop=2
 set cindent
 set mouse=a
 set nonumber
