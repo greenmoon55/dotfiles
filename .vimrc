@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-Bundle 'mattn/emmet-vim'
+"Bundle 'mattn/emmet-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'suan/vim-instant-markdown'
@@ -38,7 +38,7 @@ set smartcase
 syntax on
 
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 map <C-n> :NERDTreeToggle<CR>
 let g:syntastic_check_on_open=1
