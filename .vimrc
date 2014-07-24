@@ -1,7 +1,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -16,7 +16,7 @@ Bundle 'suan/vim-instant-markdown'
 Bundle 'kien/ctrlp.vim'
 "Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
-Bundle 'mattn/emmet-vim'
+"Bundle 'mattn/emmet-vim'
 Bundle 'davidhalter/jedi-vim'
 
 filetype plugin indent on     " required!
