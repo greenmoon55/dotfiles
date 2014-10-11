@@ -12,7 +12,7 @@ Bundle 'gmarik/vundle'
 "Bundle 'mattn/emmet-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
-Bundle 'suan/vim-instant-markdown'
+"Bundle 'suan/vim-instant-markdown'
 Bundle 'kien/ctrlp.vim'
 "Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
@@ -46,9 +46,8 @@ let g:syntastic_check_on_open=1
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " Use syntastic for python syntax checking
-"let g:syntastic_python_checkers = ['pyflakes', 'pep8']
-" let g:syntastic_python_checkers = []
-"let g:syntastic_python_pyflakes_args='--ignore=E0602'
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+let g:syntastic_python_pyflakes_args='--ignore=E0602'
 
 " Enable airline
 set laststatus=2
