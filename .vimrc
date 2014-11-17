@@ -40,6 +40,8 @@ syntax on
 set background=dark
 " colorscheme solarized
 
+autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4
+
 map <C-n> :NERDTreeToggle<CR>
 let g:syntastic_check_on_open=1
 
