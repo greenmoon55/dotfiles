@@ -48,8 +48,8 @@ let g:syntastic_check_on_open=1
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " Use syntastic for python syntax checking
-let g:syntastic_python_checkers = ['pyflakes', 'pep8']
-let g:syntastic_python_pyflakes_args='--ignore=E0602'
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_args='--ignore=E126,E127'
 
 " Enable airline
 set laststatus=2
