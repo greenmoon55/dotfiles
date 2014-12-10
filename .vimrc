@@ -18,6 +18,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 "Bundle 'mattn/emmet-vim'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on     " required!
 
@@ -50,6 +52,8 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 " Use syntastic for python syntax checking
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args='--ignore=E126,E127'
+
+let g:syntastic_javascript_checkers = ['jslint']
 
 " Enable airline
 set laststatus=2
