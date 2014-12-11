@@ -60,3 +60,4 @@ set laststatus=2
 
 "let g:jedi#completions_command = "<C-N>"
 
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
